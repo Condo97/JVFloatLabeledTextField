@@ -44,6 +44,11 @@ IB_DESIGNABLE
 @interface JVFloatLabeledTextField : UITextField
 
 /**
+ * String Value for the floating label text
+ */
+@property (nonatomic, copy) IBInspectable NSString * floatingLabelPlaceholder;
+
+/**
  * Read-only access to the floating label.
  */
 @property (nonatomic, strong, readonly) UILabel * floatingLabel;
