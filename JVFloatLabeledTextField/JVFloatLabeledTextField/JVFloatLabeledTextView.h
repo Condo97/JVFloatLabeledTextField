@@ -147,6 +147,6 @@ IB_DESIGNABLE
  *  @param placeholder The string that to be shown in the text view when no other text is present.
  *  @param floatingTitle The string to be shown above the text view once it has been populated with text by the user.
  */
-- (void)setPlaceholder:(NSString *)placeholder noTextPlaceholder:(NSString *)noTextPlaceholder floatingTitle:(NSString *)floatingTitle;
+- (void)setPlaceholder:(NSString *)placeholder floatingTitle:(NSString *)floatingTitle;
 
 @end
