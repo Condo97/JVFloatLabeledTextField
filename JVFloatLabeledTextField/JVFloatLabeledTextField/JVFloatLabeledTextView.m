@@ -347,7 +347,7 @@ static CGFloat const kFloatingLabelHideAnimationDuration = 0.3f;
 {
     _floatingLabelFont = floatingLabelFont;
     _floatingLabel.font = _floatingLabelFont ? _floatingLabelFont : [self defaultFloatingLabelFont];
-    self.placeholder = self.placeholder; // Force the label to lay itself out with the new font.
+    self.placeholder = self.noTextPlaceholder; // Force the label to lay itself out with the new font.
 }
 
 #pragma mark - Apple UITextView defaults
