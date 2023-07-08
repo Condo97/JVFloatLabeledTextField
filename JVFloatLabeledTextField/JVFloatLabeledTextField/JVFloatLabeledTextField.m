@@ -246,7 +246,12 @@ static CGFloat const kFloatingLabelHideAnimationDuration = 0.3f;
 - (void)setPlaceholder:(NSString *)placeholder
 {
     [self setCorrectPlaceholder:placeholder];
-    [self setFloatingLabelText:placeholder];
+//    [self setFloatingLabelText:placeholder];
+}
+
+- (void)setFloatingLabelPlaceholder:(NSString *)floatingLabelPlaceholder
+{
+    [self setFloatingLabelPlaceholder:floatingLabelPlaceholder];
 }
 
 - (void)setAttributedPlaceholder:(NSAttributedString *)attributedPlaceholder
