@@ -82,7 +82,7 @@ static CGFloat const kFloatingLabelHideAnimationDuration = 0.3f;
         self.font = _placeholderLabel.font;
     }
     _placeholderLabel.font = self.font;
-    _placeholderLabel.text = self.placeholder;
+    _placeholderLabel.text = self.noTextPlaceholder;
     _placeholderLabel.numberOfLines = 0;
     _placeholderLabel.lineBreakMode = NSLineBreakByWordWrapping;
     _placeholderLabel.backgroundColor = [UIColor clearColor];
