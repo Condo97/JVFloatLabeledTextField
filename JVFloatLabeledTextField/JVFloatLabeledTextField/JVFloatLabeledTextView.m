@@ -82,7 +82,7 @@ static CGFloat const kFloatingLabelHideAnimationDuration = 0.3f;
         self.font = _placeholderLabel.font;
     }
     _placeholderLabel.font = self.font;
-    _placeholderLabel.text = self.noTextPlaceholder;
+    _placeholderLabel.text = self.placeholder;
     _placeholderLabel.numberOfLines = 0;
     _placeholderLabel.lineBreakMode = NSLineBreakByWordWrapping;
     _placeholderLabel.backgroundColor = [UIColor clearColor];
@@ -347,7 +347,7 @@ static CGFloat const kFloatingLabelHideAnimationDuration = 0.3f;
 {
     _floatingLabelFont = floatingLabelFont;
     _floatingLabel.font = _floatingLabelFont ? _floatingLabelFont : [self defaultFloatingLabelFont];
-    self.placeholder = self.noTextPlaceholder; // Force the label to lay itself out with the new font.
+    self.placeholder = self.placeholder; // Force the label to lay itself out with the new font.
 }
 
 #pragma mark - Apple UITextView defaults
