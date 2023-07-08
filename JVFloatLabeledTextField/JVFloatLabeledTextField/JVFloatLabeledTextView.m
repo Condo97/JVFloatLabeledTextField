@@ -149,7 +149,7 @@ static CGFloat const kFloatingLabelHideAnimationDuration = 0.3f;
 
 - (void)setPlaceholder:(NSString *)placeholder
 {
-    _placeholder = placeholder;
+    _placeholder = self.noTextPlaceholder;
     _placeholderLabel.text = self.noTextPlaceholder;
     _floatingLabel.text = placeholder;
     
@@ -165,7 +165,7 @@ static CGFloat const kFloatingLabelHideAnimationDuration = 0.3f;
 
 - (void)setPlaceholder:(NSString *)placeholder floatingTitle:(NSString *)floatingTitle
 {
-    _placeholder = placeholder;
+    _placeholder = self.noTextPlaceholder;
     _placeholderLabel.text = self.noTextPlaceholder;
     _floatingLabel.text = floatingTitle;
     
