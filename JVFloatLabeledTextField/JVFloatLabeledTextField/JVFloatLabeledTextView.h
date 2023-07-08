@@ -44,9 +44,14 @@ IB_DESIGNABLE
 @interface JVFloatLabeledTextView : UITextView
 
 /**
- * The placeholder string to be shown in the text view when no other text is present.
+ * The placeholder string to be shown in the text view when text is present.
  */
 @property (nonatomic, copy) IBInspectable NSString * placeholder;
+
+/**
+ * The placeholder string to be shown in the text view when there is no text present
+ */
+@property (nonatomic, copy) IBInspectable NSString * noTextPlaceholder;
 
 /**
  * Read-only access to the placeholder label.
@@ -142,6 +147,6 @@ IB_DESIGNABLE
  *  @param placeholder The string that to be shown in the text view when no other text is present.
  *  @param floatingTitle The string to be shown above the text view once it has been populated with text by the user.
  */
-- (void)setPlaceholder:(NSString *)placeholder floatingTitle:(NSString *)floatingTitle;
+- (void)setPlaceholder:(NSString *)placeholder noTextPlaceholder:(NSString *)noTextPlaceholder floatingTitle:(NSString *)floatingTitle;
 
 @end

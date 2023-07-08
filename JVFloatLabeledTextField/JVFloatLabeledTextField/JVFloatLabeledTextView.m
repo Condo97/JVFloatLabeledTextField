@@ -82,7 +82,7 @@ static CGFloat const kFloatingLabelHideAnimationDuration = 0.3f;
         self.font = _placeholderLabel.font;
     }
     _placeholderLabel.font = self.font;
-    _placeholderLabel.text = self.placeholder;
+    _placeholderLabel.text = self.noTextPlaceholder;
     _placeholderLabel.numberOfLines = 0;
     _placeholderLabel.lineBreakMode = NSLineBreakByWordWrapping;
     _placeholderLabel.backgroundColor = [UIColor clearColor];
@@ -147,10 +147,10 @@ static CGFloat const kFloatingLabelHideAnimationDuration = 0.3f;
     return [textViewFont fontWithSize:roundf(textViewFont.pointSize * 0.7f)];
 }
 
-- (void)setPlaceholder:(NSString *)placeholder
+- (void)setPlaceholder:(NSString *)placeholder noTextPlaceholder:(NSString *)noTextPlaceholder
 {
     _placeholder = placeholder;
-    _placeholderLabel.text = placeholder;
+    _placeholderLabel.text = noTextPlaceholder;
     _floatingLabel.text = placeholder;
     
     if (0 != self.floatingLabelShouldLockToTop) {
@@ -163,10 +163,10 @@ static CGFloat const kFloatingLabelHideAnimationDuration = 0.3f;
     [self setNeedsLayout];
 }
 
-- (void)setPlaceholder:(NSString *)placeholder floatingTitle:(NSString *)floatingTitle
+- (void)setPlaceholder:(NSString *)placeholder noTextPlaceholder:(NSString *)noTextPlaceholder floatingTitle:(NSString *)floatingTitle
 {
     _placeholder = placeholder;
-    _placeholderLabel.text = placeholder;
+    _placeholderLabel.text = noTextPlaceholder;
     _floatingLabel.text = floatingTitle;
     
     [self setNeedsLayout];
