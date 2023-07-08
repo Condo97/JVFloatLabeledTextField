@@ -150,7 +150,7 @@ static CGFloat const kFloatingLabelHideAnimationDuration = 0.3f;
 - (void)setPlaceholder:(NSString *)placeholder
 {
     _placeholder = placeholder;
-    _placeholderLabel.text = placeholder;
+    _placeholderLabel.text = self.noTextPlaceholder;
     _floatingLabel.text = placeholder;
     
     if (0 != self.floatingLabelShouldLockToTop) {
